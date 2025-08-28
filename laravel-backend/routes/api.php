@@ -2,14 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController;
 
-Route::get('/tasks', function () {
-    return response()->json([
-        [
-            'id' => 1,
-            'title' => 'Some Title',
-            'description' => 'Some Description',
-            'status' => 'pending',
-        ]
-    ]);
-});
+Route::get('/tasks', [TaskController::class, 'index']);
+Route::post('/tasks', [TaskController::class, 'store']);

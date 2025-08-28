@@ -1,29 +1,3 @@
-const demoTasks = [
-  {
-    id: 1,
-    title: 'Planetaria',
-    description: 'Deploys from GitHub',
-    status: 'pending',
-  },
-  {
-    id: 2,
-    title: 'Planetaria',
-    description: 'Deploys from GitHub',
-    status: 'in progress',
-  },
-  {
-    id: 3,
-    title: 'Tailwind Labs',
-    description: 'Deploys from GitHub',
-    status: 'done',
-  },
-  {
-    id: 4,
-    title: 'Protocol',
-    description: 'Deploys from GitHub',
-    status: 'pending',
-  },
-]
 export default function TaskList({ tasks = [] }) {
   return (
     <ul role="list" className="divide-y divide-gray-100 dark:divide-white/5 w-2/3">
